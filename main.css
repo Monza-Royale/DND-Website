@@ -5,13 +5,13 @@
   }
   
   /* Make the image responsive */
-  .container img {
+.container img {
     width: 100%;
     height: auto;
   }
   
   /* Style the button and place it in the middle of the container/image */
-  .container .btn {
+.container .btn {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,11 +26,24 @@
     border-radius: 5px;
   }
   
-  .container .btn:hover {
+.container .btn:hover {
     color: #cecaca;
     background-color: white;
   }
-  .flex_top{
+.flex_top{
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .flex_top,.btn{
+    opacity: 0.9;
+  }
+
+  body{
+    background-color: black;
+    width: 100%;
+  }
+
+  .w3-main{
+    background-color: whitesmoke;
   }

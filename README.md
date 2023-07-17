@@ -1,2 +1,3 @@
 # DND-Website
-A D&amp;D Beyond inspired Website for DIT
+A D&D Beyond inspired Website for DIT
+This is a School Project for NCEA Lvl 3

@@ -47,3 +47,30 @@
   .w3-main{
     background-color: whitesmoke;
   }
+.table_grid{
+  display:flex;
+  flex-direction: row;
+}
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 5px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  .Fighter{
+    margin: 7px;
+  }
+
+.Modifier_dis{
+margin: 7px;
+width: 50%;
+
+}

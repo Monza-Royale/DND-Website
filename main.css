@@ -47,10 +47,15 @@
   .w3-main{
     background-color: whitesmoke;
   }
+.table_grid2{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+}
 .table_grid{
   display:flex;
   flex-direction: row;
 }
+
   table {
     font-family: arial, sans-serif;
     border-collapse: collapse;

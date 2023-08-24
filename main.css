@@ -6,7 +6,7 @@
   
   /* Make the image responsive */
 .container img {
-    width: 100%;
+    width: 98%;
     height: auto;
   }
   
@@ -36,11 +36,13 @@
   }
 
   .flex_top,.btn{
-    opacity: 0.9;
+    opacity: 0.6;
   }
-
+.flex_top,img{
+  opacity: 1;
+}
   body{
-    background-color: black;
+    background-color: whitesmoke;
     width: 100%;
   }
 
@@ -49,16 +51,21 @@
   }
 .table_grid2{
   display:grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
 .table_grid{
   display:flex;
   flex-direction: row;
+  
 }
 
   table {
     font-family: arial, sans-serif;
-    border-collapse: collapse;
+    border-collapse:separate;
+
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
   }
   
   td, th {

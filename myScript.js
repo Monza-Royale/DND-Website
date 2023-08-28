@@ -17,7 +17,7 @@ function toggleDmDropdown() {
   }
 }
 
-  // Click on the "Jeans" link on page load to open the accordion for demo purposes
+  // Click on the "Player's Corner or Dm's master page" link on page load to open the accordion
   document.getElementById("playerBtn").click();
   document.getElementById("dmBtn").click();
 

@@ -16,10 +16,11 @@
   <nav class="w3-sidebar w3-bar-block w3- w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
     <div class="w3-container w3-display-container w3-padding-16">
       <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-      <a href="index.html" class="w3-wide w3-button">D&DBBB</a>
+      <a href="index.html" class="w3-wide w3-large w3-button">D&DBBB</a>
     </div>
     
     <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+      <a href="Shops_item_comp.html" class="w3-bar-item w3-button"><s>Shop Items Compendium</s></a>
       <a href="Monsters_comp.html" class="w3-bar-item w3-button">Monsters Compendium</a>
       <a href="Spells_comp.html" class="w3-bar-item w3-button">Spells Compendium</a>
       
@@ -36,7 +37,7 @@
       
       
       <a onclick="toggleDmDropdown()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="dmBtn">
-        Dm's Master Page <i class="fa fa-caret-down"></i>
+        DM's Master Page <i class="fa fa-caret-down"></i>
       </a>
       
       <div id="dmDropdown" class="w3-bar-block w3-hide w3-padding-large w3-medium">
@@ -52,9 +53,14 @@
 
   <!-- Top menu on small screens -->
   <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-    <div class="w3-bar-item w3-padding-24 w3-wide">D&DBBB</div>
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-  </header>
+  <div class="w3-bar-item w3-padding-24 w3-wide">D&DBBB</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()">
+      <img src="img/Menu Favicon.png" alt="Menu" width="30" height="30">
+  </a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
   <!-- Overlay effect when opening sidebar on small screens -->
   <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
@@ -199,18 +205,18 @@
 
 
 </div>
-    <!-- Newsletter Modal -->
-    <div id="newsletter" class="w3-modal">
-      <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
-        <div class="w3-container w3-white w3-center">
-          <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
-          <h2 class="w3-wide">HELP</h2>
-          <p>This website is intended as a tool to be used during play to bring resources into one place for easy playing.</p>
-          <p>LOL GL</p>
-          <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Did this help?</button>
+
+        <!-- Help Button Modal -->
+        <div id="newsletter" class="w3-modal">
+          <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+            <div class="w3-container w3-white w3-center">
+              <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+              <h2 class="w3-wide">HELP</h2>
+              <p>This website is intended as a tool to be used during play to bring resources into one place for easy playing. Navigate the site using the navigation bar on the left. Or on small screens, the button to open the navigation is on the top right</p>
+              <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Ok.</button>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
   </body>
 </html>

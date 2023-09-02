@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>D&DBBB</title>
+    <title>D&DBBB/ShopItems</title> <!-- Title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="w3.css"> <!-- w3.CSS sheet -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"> <!--  Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="main.css">
-    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="main.css"> <!--My CSS Sheet  -->
+    <script src="myScript.js"></script> <!-- JS -->
   </head>
   
   <body class="w3-content" style="max-width:1200px">
   <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-bar-block w3- w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <nav class="w3-sidebar w3-bar-block w3- w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar"> <!-- Id for when screen size is small, can hide nav bar -->
     <div class="w3-container w3-display-container w3-padding-16">
       <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-      <a href="index.html" class="w3-wide w3-large w3-button">D&DBBB</a>
+      <a href="index.html" class="w3-wide w3-large w3-button">D&DBBB</a> <!-- Title that links to main page -->
     </div>
     
-    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold"> <!-- the 3 large compendiums  -->
       <a href="Shops_item_comp.html" class="w3-bar-item w3-button"><s>Shop Items Compendium</s></a>
       <a href="Monsters_comp.html" class="w3-bar-item w3-button">Monsters Compendium</a>
       <a href="Spells_comp.html" class="w3-bar-item w3-button">Spells Compendium</a>
       
       <a onclick="togglePlayerDropdown()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="playerBtn">
-        Player's Corner <i class="fa fa-caret-down"></i>
+        Player's Corner <i class="fa fa-caret-down"></i> <!-- Dropdown 1 for player things -->
       </a>
 
-      <div id="playerDropdown" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <div id="playerDropdown" class="w3-bar-block w3-hide w3-padding-large w3-medium"> <!-- Dropdown items -->
         <a href="Stats_lvl.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Stats</a>
-        <a href="Creation.html" class="w3-bar-item w3-button">Creation</a>
+        <a href="Creation.html" class="w3-bar-item w3-button">Charater Creation</a>
         <a href="Level_up.html" class="w3-bar-item w3-button">Level Up</a>
-        <a href="#" class="w3-bar-item w3-button">Straight</a>
+        <a href="Rules.html" class="w3-bar-item w3-button">Rules</a>
       </div>
       
       
       <a onclick="toggleDmDropdown()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="dmBtn">
-        DM's Master Page <i class="fa fa-caret-down"></i>
+        DM's Master Page <i class="fa fa-caret-down"></i> <!-- Dropdown for DM's things -->
       </a>
       
-      <div id="dmDropdown" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <div id="dmDropdown" class="w3-bar-block w3-hide w3-padding-large w3-medium"> <!-- Dropdown items -->
         <a href="Stat_block.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Stat Blocks</a>
         <a href="Sheets.html" class="w3-bar-item w3-button">Sheets</a>
-        <a href="Monster_info.html" class="w3-bar-item w3-button">Monsters</a>
         <a href="Shops.html" class="w3-bar-item w3-button">Shops</a>
       </div>
     </div>
+
+    <!-- Help button -->
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Help</a> 
   </nav>
 

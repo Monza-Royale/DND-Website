@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>D&DBBB</title>
+    <title>D&DBBB/LevelUp</title> <!-- Title -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="w3.css"> <!-- w3.CSS sheet -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"> <!--  Fonts-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="main.css">
-    <script src="myScript.js"></script>
+    <link rel="stylesheet" href="main.css"> <!--My CSS Sheet  -->
+    <script src="myScript.js"></script> <!-- JS -->
   </head>
   
   <body class="w3-content" style="max-width:1200px">
   <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-bar-block w3- w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+  <nav class="w3-sidebar w3-bar-block w3- w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar"> <!-- Id for when screen size is small, can hide nav bar -->
     <div class="w3-container w3-display-container w3-padding-16">
       <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
-      <a href="index.html" class="w3-wide w3-button">D&DBBB</a>
+      <a href="index.html" class="w3-wide w3-large w3-button">D&DBBB</a> <!-- Title that links to main page -->
     </div>
     
-    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold"> <!-- the 3 large compendiums  -->
       <a href="Shops_item_comp.html" class="w3-bar-item w3-button"><s>Shop Items Compendium</s></a>
       <a href="Monsters_comp.html" class="w3-bar-item w3-button">Monsters Compendium</a>
       <a href="Spells_comp.html" class="w3-bar-item w3-button">Spells Compendium</a>
       
       <a onclick="togglePlayerDropdown()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="playerBtn">
-        Player's Corner <i class="fa fa-caret-down"></i>
+        Player's Corner <i class="fa fa-caret-down"></i> <!-- Dropdown 1 for player things -->
       </a>
 
-      <div id="playerDropdown" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <div id="playerDropdown" class="w3-bar-block w3-hide w3-padding-large w3-medium"> <!-- Dropdown items -->
         <a href="Stats_lvl.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Stats</a>
-        <a href="Creation.html" class="w3-bar-item w3-button">Creation</a>
+        <a href="Creation.html" class="w3-bar-item w3-button">Charater Creation</a>
         <a href="Level_up.html" class="w3-bar-item w3-button">Level Up</a>
-        <a href="#" class="w3-bar-item w3-button">Straight</a>
+        <a href="Rules.html" class="w3-bar-item w3-button">Rules</a>
       </div>
       
       
       <a onclick="toggleDmDropdown()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="dmBtn">
-        DM's Master Page <i class="fa fa-caret-down"></i>
+        DM's Master Page <i class="fa fa-caret-down"></i> <!-- Dropdown for DM's things -->
       </a>
       
-      <div id="dmDropdown" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <div id="dmDropdown" class="w3-bar-block w3-hide w3-padding-large w3-medium"> <!-- Dropdown items -->
         <a href="Stat_block.html" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Stat Blocks</a>
         <a href="Sheets.html" class="w3-bar-item w3-button">Sheets</a>
-        <a href="Monster_info.html" class="w3-bar-item w3-button">Monsters</a>
         <a href="Shops.html" class="w3-bar-item w3-button">Shops</a>
       </div>
     </div>
+
+    <!-- Help button -->
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Help</a> 
   </nav>
 
@@ -72,10 +73,6 @@
     <header class="w3-container w3-xlarge">
       <img src="img/Wargames.png" style="width:9%">
       <p>Leveling Up</p>
-      <p class="w3-right">
-        <i class="fa fa-shopping-cart w3-margin-right"></i>
-        <i class="fa fa-search"></i>
-      </p>
     </header>
     <div class="table_grid2">
     <div class="Barbarian">   <!-- Barbarian Level up -->
@@ -1024,24 +1021,1044 @@
 
     <div class="Druid"> 
       <h3>Leveling a Druid</h3>
-      <iframe class="airtable-embed" src="https://airtable.com/embed/appawxzkhrM9s0YXC/shrJN9Jn735Kjcnrp?backgroundColor=purple" frameborder="1" onmousewheel="" width="100%" height="533" style="background: transparent; border: 3px solid #ccc;"></iframe>
+      <table>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Proficiency Bonus</th>
+            <th>Features</th>
+            <th>Cantrips Known</th>
+            <th>1st</th>
+            <th>2nd</th>
+            <th>3rd</th>
+            <th>4th</th>
+            <th>5th</th>
+            <th>6th</th>
+            <th>7th</th>
+            <th>8th</th>
+            <th>9th</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td>
+            <td>2</td>
+            <td>Spellcasting, Divine Domain</td>
+            <td>2</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>2nd</td>
+            <td>2</td>
+            <td>Channel Divinity(1/rest), Divine Domain feature</td>
+            <td>2</td>
+            <td>3</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>3rd</td>
+            <td>2</td>
+            <td>-</td>
+            <td>2</td>
+            <td>4</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>4th</td>
+            <td>2</td>
+            <td>Ability Score Improvement</td>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>5th</td>
+            <td>3</td>
+            <td>Destroy Undead (CR 1/2)</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>6th</td>
+            <td>3</td>
+            <td>Channel Divinity(2/Rest), Divine Domain feature</td>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>7th</td>
+            <td>3</td>
+            <td>-</td>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>8th</td>
+            <td>3</td>
+            <td>Ability Score Improvement, Destroy Undead(CR 1), Divine Domain feature</td>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>9th</td>
+            <td>4</td>
+            <td>-</td>
+            <td>3</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>10th</td>
+            <td>4</td>
+            <td>Divine Intervention</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>11th</td>
+            <td>4</td>
+            <td>Destroy Undead (CR 2)</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>12th</td>
+            <td>4</td>
+            <td>Ability Score Improvement</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>13th</td>
+            <td>5</td>
+            <td>-</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>14th</td>
+            <td>5</td>
+            <td>Destroy Undead (CR 3)</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>15th</td>
+            <td>5</td>
+            <td>-</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>16th</td>
+            <td>5</td>
+            <td>Ability Score Improvement</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>17th</td>
+            <td>6</td>
+            <td>Destroy Undead (CR 4), Divine Domain feature</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>18th</td>
+            <td>6</td>
+            <td>Channel Divinity (3/rest)</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>19th</td>
+            <td>6</td>
+            <td>Ability Score Improvement</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>20th</td>
+            <td>6</td>
+            <td>Divine Intervention improvement</td>
+            <td>4</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>2</td>
+            <td>1</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+        </table>
     </div>
   
     <div class="Fighter"> 
       <h3>Leveling a Fighter</h3>
-      <iframe class="airtable-embed" src="https://airtable.com/embed/appawxzkhrM9s0YXC/shrNtUT4XvG1JF7tz?backgroundColor=purple" frameborder="1" onmousewheel="" width="100%" height="533" style="background: transparent; border: 3px solid #ccc;"></iframe>
+      <table>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Proficiency Bonus</th>
+            <th>Features</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td>
+            <td>2</td>
+            <td>Fighting Style, Second Wind</td>
+          </tr>
+          <tr>
+            <td>2nd</td>
+            <td>2</td>
+            <td>Action Surge (one use)</td>
+          </tr>
+          <tr>
+            <td>3rd</td>
+            <td>2</td>
+            <td>Martial Archetype</td>
+          </tr>
+          <tr>
+            <td>4th</td>
+            <td>2</td>
+            <td>Ability Score Improvement</td>
+          </tr>
+          <tr>
+            <td>5th</td>
+            <td>3</td>
+            <td>Extra Attack </td>
+          </tr>
+          <tr>
+            <td>6th</td>
+            <td>3</td>
+            <td>Ability Score Improvement</td>
+          </tr>
+          <tr>
+            <td>7th</td>
+            <td>3</td>
+            <td>Martial Archetype Feature</td>
+          </tr>
+          <tr>
+            <td>8th</td>
+            <td>3</td>
+            <td>Ability Score Improvement</td>
+          </tr>
+          <tr>
+            <td>9th</td>
+            <td>4</td>
+            <td>Indomitable (one use)</td>
+          </tr>
+          <tr>
+            <td>10th</td>
+            <td>4</td>
+            <td>Martial Archetype Feature</td>
+          </tr>
+          <tr>
+            <td>11th</td>
+            <td>4</td>
+            <td>Extra Attack (2)</td>
+          </tr>
+          <tr>
+            <td>12th</td>
+            <td>4</td>
+            <td>Ability Score Improvement</td>
+          </tr>
+          <tr>
+            <td>13th</td>
+            <td>5</td>
+            <td>Indomitable (two uses)</td>
+          </tr>
+          <tr>
+            <td>14th</td>
+            <td>5</td>
+            <td>Ability Score Improvement</td>
+          </tr>
+          <tr>
+            <td>15th</td>
+            <td>5</td>
+            <td>Martial Archetype Feature</td>
+          </tr>
+          <tr>
+            <td>16th</td>
+            <td>5</td>
+            <td>Ability Score Improvement</td>
+          </tr>
+          <tr>
+            <td>17th</td>
+            <td>6</td>
+            <td>Action Surge (two uses), Indomitable (three uses)</td>
+          </tr>
+          <tr>
+            <td>18th</td>
+            <td>6</td>
+            <td>Martial Archetype Feature</td>
+          </tr>
+          <tr>
+            <td>19th</td>
+            <td>6</td>
+            <td>Ability Score Improvement</td>
+          </tr>
+          <tr>
+            <td>20th</td>
+            <td>6</td>
+            <td>Extra Attack (3)</td>
+          </tr>
+        </tbody>
+        </table>
+    
     </div>
 
     <div class="Paladin"> 
       <h3>Leveling a Paladin</h3>
-    <iframe class="airtable-embed" src="https://airtable.com/embed/appawxzkhrM9s0YXC/shrB5cftIjyKT5f0a?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 3px solid #ccc;"></iframe>
+      <table>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Proficiency Bonus</th>
+            <th>Features</th>
+            <th>1st</th>
+            <th>2nd</th>
+            <th>3rd</th>
+            <th>4th</th>
+            <th>5th</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td>
+            <td>2</td>
+            <td>Divine Sense, Lay on Hands</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>2nd</td>
+            <td>2</td>
+            <td>Fighting Style, Spellcasting, Divine Smite</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>3rd</td>
+            <td>2</td>
+            <td>Divine Health, Sacred Oath</td>
+            <td>3</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>4th</td>
+            <td>2</td>
+            <td>Ability Score Improvement</td>
+            <td>3</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>5th</td>
+            <td>3</td>
+            <td>Extra Attack</td>
+            <td>4</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>6th</td>
+            <td>3</td>
+            <td>Aura of Protection</td>
+            <td>4</td>
+            <td>2</td>
+            <td>-</td>
+            <td>--</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>7th</td>
+            <td>3</td>
+            <td>Sacred Oath Feature</td>
+            <td>4</td>
+            <td>3</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>8th</td>
+            <td>3</td>
+            <td>Ability Score Improvement</td>
+            <td>4</td>
+            <td>3</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>9th</td>
+            <td>4</td>
+            <td>-</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>10th</td>
+            <td>4</td>
+            <td>Aura of Courage</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>11th</td>
+            <td>4</td>
+            <td>Improved Divine Smite</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>12th</td>
+            <td>4</td>
+            <td>Ability Score Improvement</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>13th</td>
+            <td>5</td>
+            <td>-</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>14th</td>
+            <td>5</td>
+            <td>Cleansing Touch</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>15th</td>
+            <td>5</td>
+            <td>Sacred Oath Feature</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>16th</td>
+            <td>5</td>
+            <td>Ability Score Improvement</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>17th</td>
+            <td>6</td>
+            <td>-</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>18th</td>
+            <td>6</td>
+            <td>Aura Improvements</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>19th</td>
+            <td>6</td>
+            <td>Ability Score Improvement</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>20th</td>
+            <td>6</td>
+            <td>Sacred Oath Feature</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+        </table>
     </div>
 
 
     <div class="Ranger"> 
       <h3>Leveling a Ranger</h3>
-    <iframe class="airtable-embed" src="https://airtable.com/embed/appawxzkhrM9s0YXC/shrM3jYWl5EQ8pJfG?backgroundColor=purple" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 3px solid #ccc;"></iframe>
-   </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Proficiency Bonus</th>
+            <th>Features</th>
+            <th>Spells Known</th>
+            <th>1st</th>
+            <th>2nd</th>
+            <th>3rd</th>
+            <th>4th</th>
+            <th>5th</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1st</td>
+            <td>2</td>
+            <td>Favoured Enemy, Natural Explorer</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>2nd</td>
+            <td>2</td>
+            <td>Fighting Style, Spellcasting</td>
+            <td>2</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>3rd</td>
+            <td>2</td>
+            <td>Ranger Archetype, Primeval Awareness</td>
+            <td>3</td>
+            <td>3</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>4th</td>
+            <td>2</td>
+            <td>Ability Score Impovement</td>
+            <td>3</td>
+            <td>3</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>5th</td>
+            <td>3</td>
+            <td>Extra Attack</td>
+            <td>4</td>
+            <td>4</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>6th</td>
+            <td>3</td>
+            <td>Favoured Enemy and Natural Expolrer Improvements</td>
+            <td>4</td>
+            <td>4</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>7th</td>
+            <td>3</td>
+            <td>Ranger Archetype Feature</td>
+            <td>5</td>
+            <td>4</td>
+            <td>3</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>8th</td>
+            <td>3</td>
+            <td>Ability Score Impovement, Land's Stride</td>
+            <td>5</td>
+            <td>4</td>
+            <td>3</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>9th</td>
+            <td>4</td>
+            <td>-</td>
+            <td>6</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>10th</td>
+            <td>4</td>
+            <td>Natural Explorer Improvement, Hide in Plain</td>
+            <td>6</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>11th</td>
+            <td>4</td>
+            <td>Ranger Archetype Feature</td>
+            <td>7</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>12th</td>
+            <td>4</td>
+            <td>Ability Score Improvement</td>
+            <td>7</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>13th</td>
+            <td>5</td>
+            <td>-</td>
+            <td>8</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>14th</td>
+            <td>5</td>
+            <td>Favoured Enemy Improvement, Vanish</td>
+            <td>8</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>15th</td>
+            <td>5</td>
+            <td>Ranger Archetype Feature</td>
+            <td>9</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>16th</td>
+            <td>5</td>
+            <td>Ability Score Improvement</td>
+            <td>9</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>17th</td>
+            <td>6</td>
+            <td>-</td>
+            <td>10</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>18th</td>
+            <td>6</td>
+            <td>Feral Senses</td>
+            <td>10</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>1</td>
+          </tr>
+          <tr>
+            <td>19th</td>
+            <td>6</td>
+            <td>Ability Score Improvement</td>
+            <td>11</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>20th</td>
+            <td>6</td>
+            <td>Foe Slayer</td>
+            <td>11</td>
+            <td>4</td>
+            <td>3</td>
+            <td>3</td>
+            <td>3</td>
+            <td>2</td>
+          </tr>
+        </tbody>
+        </table>
+    </div>
+
+    <div class="Rogue">
+<h3>Leveling a Rogue</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Level</th>
+      <th>Proficiency Bonus</th>
+      <th>Sneak Attack</th>
+      <th>Features</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1st</td>
+      <td>2</td>
+      <td>1d6</td>
+      <td>Expertise, Sneak Attack,Thieves' Can't</td>
+    </tr>
+    <tr>
+      <td>2nd</td>
+      <td>2</td>
+      <td>1d6</td>
+      <td>Cunning Action</td>
+    </tr>
+    <tr>
+      <td>3rd</td>
+      <td>2</td>
+      <td>2d6</td>
+      <td>Roguish Archetype</td>
+    </tr>
+    <tr>
+      <td>4th</td>
+      <td>2</td>
+      <td>2d6</td>
+      <td>Ability Score Improvement</td>
+    </tr>
+    <tr>
+      <td>5th</td>
+      <td>3</td>
+      <td>3d6</td>
+      <td>Uncanny Dodge</td>
+    </tr>
+    <tr>
+      <td>6th</td>
+      <td>3</td>
+      <td>3d6</td>
+      <td>Expertise</td>
+    </tr>
+    <tr>
+      <td>7th</td>
+      <td>3</td>
+      <td>4d6</td>
+      <td>Evasion</td>
+    </tr>
+    <tr>
+      <td>8th</td>
+      <td>3</td>
+      <td>4d6</td>
+      <td>Ability Score Improvement</td>
+    </tr>
+    <tr>
+      <td>9th</td>
+      <td>4</td>
+      <td>5d6</td>
+      <td>Roguish Archetype Feature</td>
+    </tr>
+    <tr>
+      <td>10th</td>
+      <td>4</td>
+      <td>5d6</td>
+      <td>Ability Score Improvement</td>
+    </tr>
+    <tr>
+      <td>11th</td>
+      <td>4</td>
+      <td>6d6</td>
+      <td>Reliable Talent</td>
+    </tr>
+    <tr>
+      <td>12th</td>
+      <td>4</td>
+      <td>6d6</td>
+      <td>Ability Score Improvement</td>
+    </tr>
+    <tr>
+      <td>13th</td>
+      <td>5</td>
+      <td>7d6</td>
+      <td>Roguish Archetype Feature</td>
+    </tr>
+    <tr>
+      <td>14th</td>
+      <td>5</td>
+      <td>7d6</td>
+      <td>Blindsense</td>
+    </tr>
+    <tr>
+      <td>15th</td>
+      <td>5</td>
+      <td>8d6</td>
+      <td>Slippery Mind</td>
+    </tr>
+    <tr>
+      <td>16th</td>
+      <td>5</td>
+      <td>8d6</td>
+      <td>Ability Score Improvement</td>
+    </tr>
+    <tr>
+      <td>17th</td>
+      <td>6</td>
+      <td>9d6</td>
+      <td>Roguish Archetype Feature</td>
+    </tr>
+    <tr>
+      <td>18th</td>
+      <td>6</td>
+      <td>9d6</td>
+      <td>Elusive</td>
+    </tr>
+    <tr>
+      <td>19th</td>
+      <td>6</td>
+      <td>10d6</td>
+      <td>Ability Score Improvement</td>
+    </tr>
+    <tr>
+      <td>20th</td>
+      <td>6</td>
+      <td>10d6</td>
+      <td>Stroke of Luck</td>
+    </tr>
+  </tbody>
+  </table>
+
+    </div>
+
 
     </div>
 

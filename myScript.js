@@ -1,4 +1,4 @@
-// Accordion 
+// Accordion, for the nav bar x2
 function togglePlayerDropdown() {
   var x = document.getElementById("playerDropdown");
   if (x.className.indexOf("w3-show") == -1) {
@@ -21,7 +21,7 @@ function toggleDmDropdown() {
   document.getElementById("playerBtn").click();
   document.getElementById("dmBtn").click();
 
-  // Open and close sidebar
+  // Open and close sidebar, for small screens
   function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
     document.getElementById("myOverlay").style.display = "block";
